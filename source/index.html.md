@@ -30,7 +30,7 @@ To install xAdmin, you simply need to extract the zip that you have downloaded f
 Once you restart your server, xAdmin will be installed and should be functional. For the most part, xAdmin works as-is from here, but if you want to make any configuration changes (recommended), you should also follow the steps below.
 
 <aside class="notice">
-When you join the server for the first time, you (or the license holder) should already be set to the "Super Admin" group by default
+When you join the server for the first time, you (or the license holder) should already be set to the "Super Admin" group
 </aside>
 
 ## Database Configuration
