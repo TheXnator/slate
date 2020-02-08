@@ -14,8 +14,12 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the documentation for xAdmin v2!
+This documentation contains information for users and developers of xAdmin, including setup, ingame usage and API documentation for developers.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+<aside class="notice">
+If you're having issues and need support, please either create a Gmodstore ticket or join my Discord server
+</aside>
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+
+# Initial Setup
