@@ -15,6 +15,7 @@ search: true
 # Introduction
 
 Welcome to the documentation for xAdmin v2!
+
 This documentation contains information for users and developers of xAdmin, including setup, ingame usage and API documentation for developers.
 
 <aside class="notice">
