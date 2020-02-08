@@ -23,3 +23,7 @@ If you're having issues and need support, please either create a Gmodstore ticke
 
 
 # Initial Setup
+
+## Database Configuration
+
+## Steam API Key Setup
