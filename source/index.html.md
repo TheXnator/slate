@@ -53,7 +53,7 @@ xAdmin.Config.TableNamePrefix | "xadmin_" | The prefix for xAdmin table names (y
 
 Alongside the database config, the serverside configuration also consists of config for both the Steam API key used for family sharing checks and Discord relay config.
 
-If you want to use family sharing checks on your server, you will need to get a Steam dev API key from (this site)[https://steamcommunity.com/dev/apikey]. The key you generate on this site can be set as the ```xAdmin.Config.SteamAPIKey``` config option.
+If you want to use family sharing checks on your server, you will need to get a Steam dev API key from [this site](https://steamcommunity.com/dev/apikey). The key you generate on this site can be set as the ```xAdmin.Config.SteamAPIKey``` config option.
 
 
 ## Steam API Key Setup
