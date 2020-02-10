@@ -108,3 +108,68 @@ xAdmin.Config.ChatPrefix | true | Chat prefix for xAdmin notifications
 xAdmin.Config.ChatPrefixCol | false | Chat prefix colour for xAdmin notifications
 xAdmin.Config.MenuName | true | Menu display name
 xAdmin.Config.UsingFastDL | true | Set this to true if you're using a FastDL for content downloads
+
+At this point, you should be able to load up xAdmin ingame on your server without any issues. The rest of this guide will include how to use xAdmin and API documentation for developers.
+
+# xAdmin Group Structure
+
+Groups in xAdmin consist of 4 simple features: ID, Power, Col and Perms.
+
+Name | Description
+--------- | -----------
+ID | The name / unique ID of the group
+Power | The power of the group, used for inheritance and targeting (users cannot target those of higher power)
+Col | Display colour of the group, used for the menu and admin chat
+Perms | Permissions that the group has access to
+
+All of these fields can be easily modified for all groups ingame via the xAdmin menu
+
+# xAdmin Menu
+
+The xAdmin menu contains all of the features of xAdmin, including commands, ranks, bans, utilities and the in-game config.
+
+Each main section of the menu serves a purpose for a section of the addon, with the first being for commands. This tab contains a list of every command in xAdmin and a brief description, sectioned into their relevant categories. By clicking on a command, you can easily input the necessary arguments and execute commands from the menu.
+Alternatively, every command can also be executed in chat using one of the configured prefixes (```!``` or ```/``` by default), followed by the ID of the command and the arguments, ie. ```!ban TheXnator 1440 Mass RDM```. When running commands in chat, you can use TAB to autocomplete to the SteamID of the user, and all commands support input of a SteamID in place of the name of the user to target, including the wildcards * (all players), ^ (yourself) and !^ (all players but yourself).
+Every command also has a console variant, used with ```xadmin COMMAND_ID ARGS```, ie. ```xadmin ban TheXnator 1440 Mass RDM```.
+All these methods of running commands function in the same manner, and it is down to personal preference for which you would like to primarily use.
+
+The ranks section of the xAdmin menu contains easy configuration of all ranks, including creation/deletion of new groups, editing existing groups and their permissions and viewing members of groups.
+You can modify a group by clicking on it in the secondary navigation, and can view all permission categories by clicking on the permission category headers to add or remove permissions for the group.
+
+The bans section of the menu contains a list of all existing bans (if there are any). If you click on a ban here, you can modify and/or remove the ban, and view information on it such as the banning admin, the reason, the time of the ban and the length of the ban.
+
+The utilities section includes all of the various extra utilities beyond basic administration that xAdmin has to offer, outlined in the ```xAdmin Utilities``` section of this guide.
+
+The settings tab includes the ingame configuration, with easy access to modify and save any changes to the config, with all the options and their descriptions outlined above.
+
+# xAdmin Utilities
+
+Alongside being a basic admin mod, xAdmin also has a range of extra utilities to offer which server to enhance and improve the administrative experience, whilst also trying to prevent the need to purchase extra addons and attempt to integrate these with xAdmin.
+
+By default, the base version of xAdmin includes 5 different extra utilities.
+
+## Activity
+
+The activity utility allows you to easily view the game time of players. Activity information is stored in the database and can be easily viewed on the client through this section of the menu, with the name of the user, their weekly time and their total time split apart.
+
+## Calendar
+
+The calendar utility allows for staff and users to create public / private events on specific dates (a permission node is needed to make public events). Server Owners could use this feature to publicise when their updates or various events on their server will be, and anyone could use this to set deadlines or keep track of the time.
+Calendar entries can be made at any point on the calendar by simply clicking on the day and clicking ```Add Event```. You can click through the months with the navigation buttons on either side of the month and year.
+
+## Rapsheet
+
+xAdmin also includes a rapsheet utility which allows you to easily keep track of any previous punishments of users on your server. Simply click on this utility and select an online player, or search for the SteamID of any online or offline player to view their punishments, including the reason, type of punishment, date and information about the admin.
+Click on a punishment to either delete it or copy the full log
+
+## To-Do List
+
+The to-do list utility allows for anyone to create private goals and personal reminders of tasks that they need to complete. Tasks can be easily swapped between being Incomplete, In Progress or Completed, and new tasks can be easily created in this tab. Simply click on a task to edit it or move it to a different section.
+
+## Tickets
+
+The tickets utility adds a built-in report system to xAdmin. This allows your users to easily let staff know when they need assistance with anything. Users can use a configured chat prefix to create a report, which will then pop up on admins' screens. Admins can easily claim tickets, teleport to or bring the player to them through the popup, or they can go into the xAdmin menu and navigate to the tickets section to claim tickets, view tickets which aren't on their screen (popups will fade after \~10 seconds) and delete or mark tickets as finished.
+
+# API / Documentation
+
+# Support
