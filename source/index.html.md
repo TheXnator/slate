@@ -292,6 +292,57 @@ Data Type | Description
 --------- | -----------
 Table | Table of players with the rank
 
+## Check Permissions
+
+```lua
+PlayerMeta:xAdminHasPermission(node)
+```
+
+Check if a user has a given permission node
+
+Parameter | Data Type | Description
+--------- |--------- | -----------
+node | String | The permission to check for
+
+### Returns:
+Data Type | Description
+--------- | -----------
+Boolean | Whether or not the user has the permission node
+
+## Check Targeting
+
+```lua
+PlayerMeta:CanTargetGroup(group)
+```
+
+Check if a user is able to target a group
+
+Parameter | Data Type | Description
+--------- |--------- | -----------
+group | String | The group to check for
+
+### Returns:
+Data Type | Description
+--------- | -----------
+Boolean | Whether or not the user is able to target the group
+
+## Check Group
+
+```lua
+PlayerMeta:IsUserGroup(group)
+```
+
+Check if a user is a member of a group (checks primary and secondary groups)
+
+Parameter | Data Type | Description
+--------- |--------- | -----------
+group | String | The group to check for
+
+### Returns:
+Data Type | Description
+--------- | -----------
+Boolean | Whether or not the user is a member of the group
+
 # Support
 
 For support, please feel free to open up a support ticket via Gmodstore or join my Discord server here: [https://discord.gg/9YhGQaS](https://discord.gg/9YhGQaS).
