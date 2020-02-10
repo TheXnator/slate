@@ -172,4 +172,127 @@ The tickets utility adds a built-in report system to xAdmin. This allows your us
 
 # API / Documentation
 
+## Register Permission
+
+```lua
+xAdmin.RegisterPermission(permission, name, category)
+```
+
+Register a new permission node with xAdmin.
+
+Parameter | Data Type | Description
+--------- |--------- | -----------
+permission | String | The unique ID of the permission node
+name | String | The neater display name of the permission
+category | String | The category to sort the permission under
+
+<aside class="notice">
+Permissions registered with CAMI will automatically be added to xAdmin
+</aside>
+
+## Register Command
+
+```lua
+xAdmin.RegisterCommand(command, name, description, notifystr, category, action, argtypes)
+```
+
+Register a new command with xAdmin.
+
+Parameter | Data Type | Description
+--------- |--------- | -----------
+command | String | The unique ID of the command, used for chat and console commands
+name | String | The neater display name of the permission
+description | String | The description / help text for the command
+notifystr | String | The string used for formatting notifications of command use
+category | String | The category to sort the command under
+action | Function | The function to run when the command executes (Player, Arguments)
+argtypes | Table | The argument types for the command to use and the associated display text
+
+Valid argument types: ```xAdmin.ARG_PLAYER```, ```xAdmin.ARG_NUM```, ```xAdmin.ARG_STRING```, ```xAdmin.ARG_MAP```, ```xAdmin.ARG_GAMEMODE```.
+
+## Register Command Alias
+
+```lua
+xAdmin.RegisterCommandAlias(alias, command)
+```
+
+Register a new alias for an xAdmin command.
+
+Parameter | Data Type | Description
+--------- |--------- | -----------
+alias | String | The alias to register
+command | String | The ID of the command to register the alias for
+
+<aside class="notice">
+A command can have any number of aliases associated to it
+</aside>
+
+## Register Group
+
+```lua
+xAdmin.RegisterGroup(name, col, power, perms)
+```
+
+Register a new xAdmin group.
+
+Parameter | Data Type | Description
+--------- |--------- | -----------
+name | String | The display name / ID of the group
+col | Color | The display colour of the group
+power | Int | The power of the group (used for inheritance and targeting)
+perms | Table | A table of the group's allowed permission nodes
+
+## Register Config Option
+
+```lua
+xAdmin.RegisterConfigOption(name, configID, parseFunc, parseToSQLFunc, inputType)
+```
+
+Register a config option to be modifiable ingame.
+
+Parameter | Data Type | Description
+--------- |--------- | -----------
+name | String | The display name of the config option
+configID | String | The ID of the config option to modify
+parseFunc | Function | A function for parsing the data from its stored form to the config option
+parseToSQLFunc | Function | A function for parsing the config option's data for SQL/MySQL storage (as a string)
+inputType | String | The input type required for the option
+
+## Get Rank Members
+
+```lua
+xAdmin.GetMembersByRank(rank)
+```
+
+Get all members of a given rank (primary members)
+
+Parameter | Data Type | Description
+--------- |--------- | -----------
+rank | String | The rank to check
+
+### Returns:
+Data Type | Description
+--------- | -----------
+Table | Table of players with the rank
+
+## Get Secondary Rank Members
+
+```lua
+xAdmin.GetSecondaryMembersByRank(rank)
+```
+
+Get all members of a given rank (secnondary members)
+
+Parameter | Data Type | Description
+--------- |--------- | -----------
+rank | String | The rank to check
+
+### Returns:
+Data Type | Description
+--------- | -----------
+Table | Table of players with the rank
+
 # Support
+
+For support, please feel free to open up a support ticket via Gmodstore or join my Discord server here: [https://discord.gg/9YhGQaS](https://discord.gg/9YhGQaS).
+If you're joining my Discord server for support, please ensure you read the ```#info``` channel before making a request.
